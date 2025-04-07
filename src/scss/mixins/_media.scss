@@ -1,76 +1,43 @@
-/* Media Queries */
-@media (992px <= width < 1200px) {
-    .video__player {
-        min-height: 500px;
-        max-height: fit-content;
+@use "../presets" as *;
+
+@mixin xl {
+    @media ($lg <= width < $xl) {
+        @content;
     }
 }
 
-@media (768px <= width < 992px) {
-    .projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .video__player {
-        min-height: 350px;
-        max-height: fit-content;
+@mixin lg {
+    @media ($md <= width < $lg) {
+        @content;
     }
 }
 
-@media (576px <= width < 768px) {
-    .about {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .projects {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .process {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .video__player {
-        margin-top: 0;
-        min-height: 250px;
-        max-height: fit-content;
+@mixin md {
+    @media ($sm <= width < $md) {
+        @content;
     }
 }
 
-@media (375px <= width < 576px) {
-    h1 {
-        font-size: 2.5rem;
+@mixin sm {
+    @media ($xs <= width < $sm) {
+        @content;
     }
-    h2 {
-        font-size: 1.5rem;
+}
+
+@mixin xs {
+    @media ($vs <= width < $xs) {
+        @content;
     }
-    .navbar__list {
-        justify-content: center;
+}
+
+@mixin vs {
+    @media (width < $vs) {
+        @content;
     }
-    .hero {
-        align-items: center;
-        text-align: center;
-    }
-    .about {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .projects {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .process {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .video__player {
-        margin-top: 0;
-        min-height: 100px;
-        max-height: fit-content;
-    }
-    .footer {
-        padding: 25px;
+}
+
+@mixin us {
+    @media (width > $us) {
+        @content;
     }
 }
