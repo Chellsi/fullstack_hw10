@@ -1,0 +1,34 @@
+/* Hero block */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: var(--container-secondary);
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 39px;
+    margin-left: -0.1em;
+}
+
+.hero__description {
+    color: var(--color-secondary);
+    margin-bottom: 57px;
+    margin-left: -0.3em;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    min-width: 225px;
+    min-height: 65px;
+    text-transform: uppercase;
+    padding: 0.5em;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+    margin-left: -0.3em;
+}

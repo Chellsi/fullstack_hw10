@@ -1,0 +1,16 @@
+/* Process block */
+.process {
+    background-color: var(--color-gray-lighter);
+    padding-top: 89px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.process__title {
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
+.process__description {
+    color: var(--color-secondary);
+}

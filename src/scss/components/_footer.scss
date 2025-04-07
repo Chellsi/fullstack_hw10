@@ -1,0 +1,21 @@
+/* Footer block */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 45px;
+}
+
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap-sm) - 4px);
+}
+
+.footer__title {
+    font-size: 21px;
+}
+
+.footer__copyright {
+    font-size: 13px;
+    font-weight: 300;
+}

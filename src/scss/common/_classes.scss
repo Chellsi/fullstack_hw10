@@ -1,0 +1,40 @@
+/* Common block */
+.container {
+    width: min(100% - var(--gap-xl), var(--container-primary));
+    margin-inline: auto;
+}
+
+.container-sm {
+    width: min(100% - var(--gap-xl), var(--container-secondary));
+    margin-inline: auto;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 92px;
+    text-align: center;
+}
+
+.section__title {
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
+.section__description {
+    color: var(--color-secondary);
+}
+
+.visually-hidden {  
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    visibility: hidden;
+}
