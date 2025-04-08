@@ -1,15 +1,18 @@
+@use "./presets" as *;
+
 /* Video block */
 .video {
-    background-color: var(--color-gray-lighter);
+    background-color: $color-gray-lighter;
     padding-top: 0;
     padding-bottom: 93px;
     text-align: center;
+
+    &__player {
+        margin-top: 50px;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        min-height: 600px;
+    }
 }
 
-.video__player {
-    margin-top: 50px;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: 0;
-    min-height: 600px;
-}

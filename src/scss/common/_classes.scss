@@ -1,11 +1,14 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 /* Common block */
 .container {
-    width: min(100% - var(--gap-xl), var(--container-primary));
+    width: min(100% - $gap-xl, $container-primary);
     margin-inline: auto;
 }
 
 .container-sm {
-    width: min(100% - var(--gap-xl), var(--container-secondary));
+    width: min(100% - $gap-xl, $container-secondary);
     margin-inline: auto;
 }
 
@@ -21,7 +24,7 @@
 }
 
 .section__description {
-    color: var(--color-secondary);
+    color: $color-secondary;
 }
 
 .visually-hidden {  

@@ -1,21 +1,24 @@
+@use "./presets" as *;
+
 /* Footer block */
 .footer {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: $color-primary;
+    color: $color-white;
     padding: 45px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: calc($gap-sm - 4px);
+    }
+    
+    &__title {
+        font-size: 21px;
+    }
+    
+    &__copyright {
+        font-size: 13px;
+        font-weight: 300;
+    }
 }
 
-.footer__text {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--gap-sm) - 4px);
-}
-
-.footer__title {
-    font-size: 21px;
-}
-
-.footer__copyright {
-    font-size: 13px;
-    font-weight: 300;
-}

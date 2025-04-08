@@ -1,32 +1,35 @@
+@use "./presets" as *;
+
 /* Header and navbar */
 .header {
-    background-color: var(--color-gray-light);
+    background-color: $color-gray-light;
     padding-top: 69px;
     padding-bottom: 141px;
 }
 
 .navbar {
     padding-bottom: 140px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        letter-spacing: $letter-spacing;
+        column-gap: 27px;
+        margin-left: -1.1em;
+    }
+    
+    &__link {
+        display: block;
+        font-size: $font-size;
+        color: $color-black;
+        text-transform: uppercase;
+        padding: 0.5em 0.75em;
+        cursor: pointer;
+
+        &--active {
+            color: $color-primary;
+            font-weight: 700;
+        }
+    }
 }
 
-.navbar__list {
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: var(--letter-spacing);
-    column-gap: 27px;
-    margin-left: -1.1em;
-}
-
-.navbar__link {
-    display: block;
-    font-size: var(--font-size);
-    color: var(--color-black);
-    text-transform: uppercase;
-    padding: 0.5em 0.75em;
-    cursor: pointer;
-}
-
-.navbar__link--active {
-    color: var(--color-primary);
-    font-weight: 700;
-}

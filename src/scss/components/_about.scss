@@ -1,16 +1,10 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 /* About me block */
 .about {
-    background-color: var(--color-gray-lighter);
     padding-top: 100px;
     padding-bottom: 92px;
-    text-align: center;
-}
-
-.about__title {
-    margin-top: 8px;
-    margin-bottom: 35px;
-}
-
-.about__description {
-    color: var(--color-secondary);
+    background-color: $color-gray-lighter;
+    @include section();
 }

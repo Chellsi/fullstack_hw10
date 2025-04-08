@@ -1,6 +1,8 @@
 @use "../presets" as *;
 
-@mixin section() {
+%section {
+    padding-top: 100px;
+    padding-bottom: 92px;
     text-align: center;
     
     &__title {
