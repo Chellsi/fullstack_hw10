@@ -1,10 +1,15 @@
 @use "./presets" as *;
+@use "./mixins" as *;
 
 /* Footer block */
 .footer {
     background-color: $color-primary;
     color: $color-white;
     padding: 45px;
+
+    @include respond-to($breakpoint-xs, $breakpoint-sm) {
+        padding: 25px;
+    }
 
     &__text {
         display: flex;

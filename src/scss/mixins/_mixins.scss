@@ -1,5 +1,17 @@
 @use "../presets" as *;
 
+@mixin respond-to($min, $max: null) {
+    @if $max {
+        @media (min-width: $min) and (max-width: #{$max - 1px}) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+}
+
 @mixin section() {
     text-align: center;
     
@@ -12,3 +24,4 @@
         color: $color-secondary;
     }
 }
+

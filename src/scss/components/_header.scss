@@ -1,4 +1,5 @@
 @use "./presets" as *;
+@use "./mixins" as *;
 
 /* Header and navbar */
 .header {
@@ -9,6 +10,10 @@
 
 .navbar {
     padding-bottom: 140px;
+
+    @include respond-to($breakpoint-xs, $breakpoint-sm) {
+        justify-content: center;
+    }
 
     &__list {
         display: flex;
