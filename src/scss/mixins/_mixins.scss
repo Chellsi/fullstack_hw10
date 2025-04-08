@@ -2,11 +2,11 @@
 
 @mixin respond-to($min, $max: null) {
     @if $max {
-        @media (min-width: $min) and (max-width: #{$max - 1px}) {
+        @media (min-width: #{$min}) and (max-width: calc(#{$max} - 1px)) {
             @content;
         }
     } @else {
-        @media (min-width: $min) {
+        @media (min-width: #{$min}) {
             @content;
         }
     }
